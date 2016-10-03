@@ -1,9 +1,12 @@
 import React from 'react';
+import '../css/Main.css'
+
+import BeyonceLogo from './Main/BeyonceLogo'
 
 const Main = () => {
   return (
     <div className="main">
-      BEYONCE FOR PRESIDENT
+      <BeyonceLogo />
     </div>
   )
 }

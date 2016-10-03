@@ -1,0 +1,20 @@
+.main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 80%;
+  background: #F1C3FF;
+  text-align: center;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.logo {
+  position: relative;
+  top: 35%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 10.0em;
+  letter-spacing: 30px;
+}
