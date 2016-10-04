@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../css/SocialMedia.css'
 import SocialMediaIcon from './SocialMedia/SocialMediaIcon'
+import $ from 'jquery'
 
 class SocialMedia extends Component {
   constructor(props){
@@ -10,13 +11,17 @@ class SocialMedia extends Component {
     }
   }
 
+  /*
+  @param = social media icon DOM element
+  changes the displayed social media feed to be whichever was clicked and
+    hides all others
+  */
   switchSocialMediaFeedOnClick(clicked){
-    //selects currently displayed social media feed and clicked social media feed from DOM
-    const currentlyDisplayed = document.getElementsByClassName(this.state.currentSocialMediaFeed)
-    const socialMedia = document.getElementsByClassName(clicked)
-    //sets currently displayed to hidden and clicked to inline
-    currentlyDisplayed.style.display = "hidden"
-    socialMedia.style.display = "inline"
+    const $clicked = $(`.${clicked}`)
+    //sets currently displayed social media to hidden
+    // $(`.${this.state.currentSocialMediaFeed}`).css({'display':'none', 'border':'transparent'})
+    //displays clicked social media
+    $clicked.css({'display':'flex'})
     //sets state to reflect the clicked social media as currently displayed
     this.setState({currentSocialMediaFeed: clicked})
   }

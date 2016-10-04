@@ -23,8 +23,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   /*font-size: 10.0em;
-  letter-spacing: 30px;
-  color: #FFFFFF;*/
+  letter-spacing: 30px;*/
+  /*color: #FFFFFF;*/
   width: 75%;
   /*height: 75%;
   text-align: center;
@@ -32,10 +32,6 @@
   z-index: 10;
   font-size: 7.0em;
 }
-.logo {
-
-}
-
 .photo {
   position: absolute;
   top: 50%;

@@ -10,7 +10,6 @@ const SocialMediaIcon =  ({socialMediaAccount, currentSocialMediaFeed, switchSoc
   }
 
   const pathToIcon = `../../../../icons/${socialMediaAccount}.svg`
-  console.log('path to icon', pathToIcon);
 
   return (
     <a href="" onClick={e => handleClick(e)}>
