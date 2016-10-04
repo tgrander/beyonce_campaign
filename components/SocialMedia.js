@@ -19,7 +19,7 @@ class SocialMedia extends Component {
   switchSocialMediaFeedOnClick(clicked){
     const $clicked = $(`.${clicked}`)
     //sets currently displayed social media to hidden
-    // $(`.${this.state.currentSocialMediaFeed}`).css({'display':'none', 'border':'transparent'})
+    $(`.${this.state.currentSocialMediaFeed}`).css({'display':'none'})
     //displays clicked social media
     $clicked.css({'display':'flex'})
     //sets state to reflect the clicked social media as currently displayed
