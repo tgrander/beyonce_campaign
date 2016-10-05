@@ -12,7 +12,7 @@ const SocialMediaIcon =  ({socialMediaAccount, currentSocialMediaFeed, switchSoc
   return (
     <a href="" onClick={e => handleClick(e)}>
       <img className="icon" src={pathToIcon} alt="" />
-    </a>
+    </a> 
   )
 
 }

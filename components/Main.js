@@ -7,8 +7,10 @@ import Photo from './Main/Photo'
 const Main = () => {
   return (
     <div className="main">
-      <BeyonceLogo/>
-      <Photo/>
+      <div className="animate-area">
+        <Photo/>
+        <BeyonceLogo/>
+      </div>
     </div>
   )
 }

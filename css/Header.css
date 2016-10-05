@@ -1,6 +1,6 @@
 header {
   position: fixed;
-  height: 4%;
+  height: 50px;
   top: 0;
   display: flex;
   flex-flow: row nowrap;

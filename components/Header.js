@@ -5,11 +5,9 @@ import '../css/Header.css'
 const Header = () => {
   return (
     <header>
-
       <ul>
         <li>#KweenBey4Prez</li>
       </ul>
-
     </header>
   )
 }

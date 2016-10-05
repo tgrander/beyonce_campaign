@@ -9,15 +9,15 @@ const PlaylistItem = ({track}) => {
     backgroundImage: `url(${imageURL})`
   }
 
-  const displayTrackDetailsOnMouseEnter = () => {
-    console.log('ENTERED');
-    const $hoverDetails = $('.hover-state')
-    console.log('HOVER STATE', $hoverDetails);
-    $hoverDetails.css('display','none')
-    $('.play-list-item').bind('mouseleave', () => {
-      $hoverDetails.css('display', 'none')
-    })
-  }
+  // const displayTrackDetailsOnMouseEnter = () => {
+  //   console.log('ENTERED');
+  //   const $hoverDetails = $('.hover-state')
+  //   console.log('HOVER STATE', $hoverDetails);
+  //   $hoverDetails.css('display','none')
+  //   $('.play-list-item').bind('mouseleave', () => {
+  //     $hoverDetails.css('display', 'none')
+  //   })
+  // }
 
   let playing = false
   const songURL = track.preview_url
@@ -25,8 +25,6 @@ const PlaylistItem = ({track}) => {
 
   const playSongOnClick = (e) => {
     e.preventDefault()
-    console.log('AUDIO', audio);
-    console.log('URL', songURL);
     if (!playing) {
       audio.play();
       playing=true;
@@ -38,7 +36,13 @@ const PlaylistItem = ({track}) => {
 
   return (
     //background is track image
-    <div className="play-list-item" style={divStyle} onClick={e => playSongOnClick(e)}>
+    <div
+      className="play-list-item"
+      style={divStyle}
+      onClick={e => playSongOnClick(e)}
+
+    >
+
 
       <div className="hover-state">
         <h1>{track.name}</h1><br/>

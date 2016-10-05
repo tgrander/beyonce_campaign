@@ -13,6 +13,7 @@ class App extends Component {
 
         <Header />
         <Main />
+        <div id='lower-background'></div>
         <SocialMedia />
         <SpotifyPlaylist />
 

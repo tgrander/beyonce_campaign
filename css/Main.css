@@ -1,3 +1,7 @@
+@keyframes animatedBackground {
+  0% { : 0 0; }
+  100% { background-position: 100% 0; }
+}
 .main {
   position: fixed;
   top: 0;
@@ -10,28 +14,35 @@
   text-align: center;
   margin: 0 auto;
   overflow: hidden;
-  margin-top: 4%;
+  margin-top: 50px;
   z-index: 2;
-
+  overflow: hidden;
+  display: block;
 }
-.main .logo-container {
+.animate-area {
+  height: 600px;
+  width: 100%;
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  animation: animatedBackground 10s linear infinite;
+}
+.logo-container {
   /*display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;*/
-
   position: absolute;
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   /*font-size: 10.0em;
   letter-spacing: 30px;*/
-  /*color: #FFFFFF;*/
+  color: #FFFFFF;
   width: 75%;
   /*height: 75%;
   text-align: center;
   margin: 0 auto;*/
   z-index: 10;
-  font-size: 7.0em;
+  font-size: 10vw;
 }
 .photo {
   position: absolute;
@@ -42,6 +53,21 @@
   width: auto;
   z-index: 1;
 }
+.lower-background {
+  position: absolute;
+  z-index: 3;
+  top: 80%;
+  background: black;
+  width: 100%;
+  height: 2000px;
+}
+
+
+
+
+
+
+
 .arrow-div {
   z-index: 10;
 }

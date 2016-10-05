@@ -19,6 +19,12 @@ html {
   width: 300px;
   margin: 1%;
 }
+/*.play-list-item img {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 5;
+}*/
 .hover-state {
   background: rgba(255,255,255,0.2);
   width: 100%;
@@ -27,6 +33,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 10;
   /*display: none;*/
 }
 .hover-state p {
