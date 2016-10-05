@@ -7,7 +7,7 @@ const BeyonceLogo = () => (
     <div className="logo">
        BEYONCE<br/>
        4 PRESIDENT<br/>
-       2K16
+       2016
     </div>
 
 

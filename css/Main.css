@@ -1,5 +1,5 @@
 .main {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -11,7 +11,8 @@
   margin: 0 auto;
   overflow: hidden;
   margin-top: 4%;
-  z-index: 50;
+  z-index: 2;
+
 }
 .main .logo-container {
   /*display: flex;
@@ -41,8 +42,6 @@
   width: auto;
   z-index: 1;
 }
-
-
 .arrow-div {
   z-index: 10;
 }

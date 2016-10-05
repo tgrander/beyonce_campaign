@@ -3,11 +3,13 @@ import '../css/SocialMedia.css'
 import SocialMediaIcon from './SocialMedia/SocialMediaIcon'
 import $ from 'jquery'
 
+const socialMediaIcons = ['instagram', 'twitter', 'spotify']
+
 class SocialMedia extends Component {
   constructor(props){
     super(props)
     this.state = {
-      currentSocialMediaFeed: 'instagram'
+      currentSocialMediaFeed: 'spotify'
     }
   }
 
@@ -17,6 +19,7 @@ class SocialMedia extends Component {
     hides all others
   */
   switchSocialMediaFeedOnClick(clicked){
+    //the name of the social media clicked is passed into function and captured from DOM
     const $clicked = $(`.${clicked}`)
     //sets currently displayed social media to hidden
     $(`.${this.state.currentSocialMediaFeed}`).css({'display':'none'})
@@ -47,5 +50,3 @@ class SocialMedia extends Component {
 }
 
 export default SocialMedia
-
-const socialMediaIcons = ['instagram', 'twitter', 'spotify']

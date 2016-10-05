@@ -1,8 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const SocialMediaIcon =  ({socialMediaAccount, currentSocialMediaFeed, switchSocialMediaFeedOnClick}) => {
-
-  console.log('socialMediaAccount: ', socialMediaAccount);
 
   const handleClick = (e) => {
     e.preventDefault()

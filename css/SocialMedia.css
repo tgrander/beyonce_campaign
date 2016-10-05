@@ -9,6 +9,8 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
+  z-index: 21;
+  /*background-color: #FFFFFF;*/
 }
 
 h2 {

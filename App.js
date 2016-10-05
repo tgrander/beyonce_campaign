@@ -4,6 +4,7 @@ import './css/App.css'
 import Header from './components/Header'
 import Main from './components/Main'
 import SocialMedia from './components/SocialMedia'
+import SpotifyPlaylist from './components/SocialMedia/SpotifyPlaylist'
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <Header />
         <Main />
         <SocialMedia />
+        <SpotifyPlaylist />
 
       </div>
     );
